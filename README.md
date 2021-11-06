@@ -19,7 +19,7 @@ user_repos = manager.get_repositories(
 )
 
 # pass in list of Repo Objects and specify how to sort
-# using the SortType Enums
+# using 1 or more SortType Enums
 user_repos = RepoManager.sort_repos_by(
     repo_list=user_repos,
     sort_types=[SortType.created_at, SortType.size]
